@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(255, 17, 0), rgb(214, 218, 12));
+  }
+
+.game-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: minmax(150px, auto) repeat(3, 150px);
+  }
+  
+  .game-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(233, 131, 48);
+  }
+  
+  .game-grid > button:hover {
+    background-color: rgba(238, 23, 23, 0.9);
+  }
